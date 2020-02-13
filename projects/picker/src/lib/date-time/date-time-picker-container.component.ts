@@ -160,7 +160,7 @@ export class OwlDateTimeContainerComponent<T>
     get showControlButtons(): boolean {
         return (
             this.picker.pickerMode === 'dialog' ||
-            (this.picker.pickerType !== 'calendar' &&
+            (this.picker.pickerType === 'calendar' &&
                 this.picker.pickerMode !== 'inline')
         );
     }
